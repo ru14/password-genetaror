@@ -43,25 +43,20 @@ function myFunction() {
         return;
         }
         //password is generated that matches the selected criteria
-    else console.log("second step");
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-    document.getElementById("demo").innerHTML = txt;
+    else console.log("second step");e.preventDefult() 
+    const password =generatePassword(characterAmount,includeUpperCase,includeLowerCase,includeNumeric,includeSpecialCharater)
+ document.getElementById("demo").innerHTML = txt;
 }
+function generatePassword(characterAmount,includeUpperCase,includeLowerCase,includeSpecialCharater,includeNumeric){
 
+}
+function arrayrange(low,high){
+    var array=[]
+    for(let i =low; i <=high;i++){
+        array.push(i)
+    }
+    return arrsy
+}
 
 
 
