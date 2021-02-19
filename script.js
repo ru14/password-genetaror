@@ -47,8 +47,9 @@ function myFunction() {
     const password =generatePassword(characterAmount,includeUpperCase,includeLowerCase,includeNumeric,includeSpecialCharater)
  document.getElementById("demo").innerHTML = txt;
 }
+var upperCaseCC = arrayrange(65,90)
 function generatePassword(characterAmount,includeUpperCase,includeLowerCase,includeSpecialCharater,includeNumeric){
-
+console.log(upperCaseCC)
 }
 function arrayrange(low,high){
     var array=[]
