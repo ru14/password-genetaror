@@ -1,17 +1,26 @@
 function myFunction() {
     var txt;
     if (confirm("Generat password")) {
-      prompt("do you want Upper-case");
-    } else {
-      txt = "See you next time";
+        var inputLength = prompt("Please choose number between 8-128");
+
+        // Validate inputLength is number
+        var num = parseInt(inputLength, 10);
+        if (isNaN(num)) {
+            console.log("this is not an integer number.");
+            return;
+        }
+
+        // Validate inputLength is between 8 and 128
+        if (num < 8 || num > 128) {
+            console.log("Lenght is not in range.");
+            return;
+        }
+
+        console.log("Next step");
     }
+
     document.getElementById("demo").innerHTML = txt;
-  }
-
-
-
-
-
+}
 
 
 
