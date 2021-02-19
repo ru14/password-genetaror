@@ -17,8 +17,24 @@ function myFunction() {
         }
 
         console.log("Next step");
+        // choose lowercase, uppercase, numeric, and/or special characters
     }
-
+ var upperCase= confirm("Do you want Uppercase?");
+ if (upperCase=== true){
+     txt="you chose Uppercase"
+ }
+ var lowerCase= confirm("Do you want Lowercase?");
+ if (lowerCase=== true){
+     txt="you chose Lowercase"
+ }
+ var numeric= confirm("Do you want Numeric?");
+ if (numeric=== true){
+     txt="you chose Numeric"
+ }
+ var specialCharater= confirm("Do you want  SpecialCharater?");
+ if (specialCharater=== true){
+     txt="you chose  SpecialCharater"
+ }
     document.getElementById("demo").innerHTML = txt;
 }
 
