@@ -19,22 +19,46 @@ function myFunction() {
         console.log("Next step");
         // choose lowercase, uppercase, numeric, and/or special characters
     }
- var upperCase= confirm("Do you want Uppercase?");
- if (upperCase=== true){
-     txt="you chose Uppercase"
- }
- var lowerCase= confirm("Do you want Lowercase?");
- if (lowerCase=== true){
-     txt="you chose Lowercase"
- }
- var numeric= confirm("Do you want Numeric?");
- if (numeric=== true){
-     txt="you chose Numeric"
- }
- var specialCharater= confirm("Do you want  SpecialCharater?");
- if (specialCharater=== true){
-     txt="you chose  SpecialCharater"
- }
+
+    var upperCase = confirm("Do you want Uppercase?");
+    if (upperCase === true) {
+        txt = "you chose Uppercase"
+    }
+    var lowerCase = confirm("Do you want Lowercase?");
+    if (lowerCase === true) {
+        txt = "you chose Lowercase"
+    }
+    var numeric = confirm("Do you want Numeric?");
+    if (numeric === true) {
+        txt = "you chose Numeric"
+    }
+    var specialCharater = confirm("Do you want  SpecialCharater?");
+    if (specialCharater === true) {
+        txt = "you chose  SpecialCharater"
+    }
+    //my input should be validated and at least one 
+    //character type should be selected?
+    if ( (upperCase || lowerCase || numeric || specialCharater) === false) {
+        console.log("no character type was chosen.")
+        return;
+        
+    }
+    else console.log("second step");
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
     document.getElementById("demo").innerHTML = txt;
 }
 
