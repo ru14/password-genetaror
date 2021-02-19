@@ -54,9 +54,9 @@ function myFunction() {
 //array for password and include in password generater 
 var upperCaseCC = arrayrange(65, 90);
 var lowerCaseCC = arrayrange(97,122);
-//? other no have symbole to add
+//? other no have symbole to add concat
 var specialCharaterCC =arrayrange(33,47);
-var numericCC =arrayrange(48,57)
+var numericCC =arrayrange(48,57).concat(58,64).concat(91,96).concat(123,126)
 
 function generatePassword(characterAmount, includeUpperCase, includeLowerCase, includeSpecialCharater, includeNumeric) {
     console.log(upperCaseCC)
@@ -70,6 +70,7 @@ function arrayrange(low, high) {
     }
 
     return array;
+
 }
 
 
