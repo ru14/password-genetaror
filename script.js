@@ -38,26 +38,34 @@ function myFunction() {
     }
     //my input should be validated and at least one 
     //character type should be selected?
-    if ( (upperCase || lowerCase || numeric || specialCharater) === false) {
+    if ((upperCase || lowerCase || numeric || specialCharater) === false) {
         console.log("To validated and at least one character type should be selected.")
         return;
-        }
-        //password is generated that matches the selected criteria
-    else console.log("second step"); e.preventDefult() 
-    const password =generatePassword(characterAmount,includeUpperCase,includeLowerCase,includeNumeric,includeSpecialCharater)
- document.getElementById("demo").innerHTML = txt;
-}
-//array for password and include in password generater
-var upperCaseCC = arrayrange(65,90)
-function generatePassword(characterAmount,includeUpperCase,includeLowerCase,includeSpecialCharater,includeNumeric){
-console.log(upperCaseCC)
-}
-function arrayrange(low,high){
-    var array=[]
-    for(let i =low; i <=high;i++){
-        array.push(i)
     }
-    return array
+
+    //password is generated that matches the selected criteria
+    else console.log("second step"); 
+    //e.preventDefault();
+
+    var characterAmount = num;
+    //const password = generatePassword(characterAmount, includeUpperCase, includeLowerCase, includeNumeric, includeSpecialCharater)
+    document.getElementById("demo").innerHTML = txt;
+}
+//array for password and include in password generater 
+var upperCaseCC = arrayrange(65, 90);
+
+function generatePassword(characterAmount, includeUpperCase, includeLowerCase, includeSpecialCharater, includeNumeric) {
+    console.log(upperCaseCC)
+}
+
+function arrayrange(low, high) {
+    var array = [];
+    for (let i = low; i <= high; i++) {
+        array.push(i);
+        console.log(array)
+    }
+
+    return array;
 }
 
 
