@@ -56,7 +56,7 @@ var upperCaseCC = arrayrange(65, 90);
 var lowerCaseCC = arrayrange(97,122);
 //? other no have symbole to add concat
 var specialCharaterCC =arrayrange(33,47);
-var numericCC =arrayrange(48,57).concat(58,64).concat(91,96).concat(123,126)
+var numericCC =arrayrange(48,57).concat(arrayrange(58,64)).concat(arrayrange(91,96)).concat(arrayrange(123,126))
 
 function generatePassword(characterAmount, includeUpperCase, includeLowerCase, includeSpecialCharater, includeNumeric) {
     console.log(upperCaseCC)
