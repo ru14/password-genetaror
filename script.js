@@ -39,10 +39,10 @@ function myFunction() {
     //my input should be validated and at least one 
     //character type should be selected?
     if ( (upperCase || lowerCase || numeric || specialCharater) === false) {
-        console.log("no character type was chosen.")
+        console.log("To validated and at least one character type should be selected.")
         return;
-        
-    }
+        }
+        //password is generated that matches the selected criteria
     else console.log("second step");
 
 
