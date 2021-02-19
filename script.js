@@ -43,10 +43,11 @@ function myFunction() {
         return;
         }
         //password is generated that matches the selected criteria
-    else console.log("second step");e.preventDefult() 
+    else console.log("second step"); e.preventDefult() 
     const password =generatePassword(characterAmount,includeUpperCase,includeLowerCase,includeNumeric,includeSpecialCharater)
  document.getElementById("demo").innerHTML = txt;
 }
+//array for password and include in password generater
 var upperCaseCC = arrayrange(65,90)
 function generatePassword(characterAmount,includeUpperCase,includeLowerCase,includeSpecialCharater,includeNumeric){
 console.log(upperCaseCC)
@@ -56,7 +57,7 @@ function arrayrange(low,high){
     for(let i =low; i <=high;i++){
         array.push(i)
     }
-    return arrsy
+    return array
 }
 
 
