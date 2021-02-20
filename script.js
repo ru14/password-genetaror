@@ -86,6 +86,7 @@ function generatePassword(characterAmount, upperCase, lowerCase, numeric, specia
 
     console.log(passwordCharaters.join(""));
     return passwordCharaters.join("");
+    txt=passwordCharaters
 }
 
 function arrayrange(low, high) {
