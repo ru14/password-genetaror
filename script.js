@@ -74,6 +74,12 @@ function generatePassword(characterAmount, upperCase, lowerCase, numeric, specia
         charCodestoUse.concat(specialCharaterCC);
     }
     console.log(charCodesToUse)
+    // create for loop for it to work 
+    var passwordCharaters=[]
+    for(let i=0; i<characterAmount,i++){
+        var charater=charCodesToUse[Math.floor(Math.random()*characterAmount)]
+        passwordCharaters.push(i)
+    }
 }
 
 function arrayrange(low, high) {
