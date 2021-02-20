@@ -49,39 +49,43 @@ function myFunction() {
 
     var characterAmount = num;
     const password = generatePassword(characterAmount, upperCase, lowerCase, numeric, specialCharater);
-    document.getElementById("demo").innerHTML = txt;
+    document.getElementById("demo").innerHTML = password;
 }
 //array for password and include in password generater 
 var upperCaseCC = arrayrange(65, 90);
 var lowerCaseCC = arrayrange(97, 122);
 //? other no have symbole to add concat
-var specialCharaterCC = arrayrange(33, 47);
-var numericCC = arrayrange(48, 57).concat(arrayrange(58, 64)).concat(arrayrange(91, 96)).concat(arrayrange(123, 126))
+var specialCharaterCC = arrayrange(33, 47).concat(arrayrange(58, 64)).concat(arrayrange(91, 96)).concat(arrayrange(123, 126));
+var numericCC = arrayrange(48, 57);
 
 function generatePassword(characterAmount, upperCase, lowerCase, numeric, specialCharater) {
-    String.fromCharCode(i)
-    var charCodesToUse = [];
-    if (UpperCase) {
-        charCodesToUse.concat(upperCaseCC);
+ var charCodesToUse = [];
+    if (upperCase) {
+        charCodesToUse = charCodesToUse.concat(upperCaseCC);
     }
     if (lowerCase) {
-        charCodestoUse.concat(lowerCaseCC);
+        charCodesToUse = charCodesToUse.concat(lowerCaseCC);
     }
     if (numeric) {
-        charCodestoUse.concat(numericCC);
+        charCodesToUse = charCodesToUse.concat(numericCC);
     }
     if (specialCharater) {
-        charCodestoUse.concat(specialCharaterCC);
+        charCodesToUse = charCodesToUse.concat(specialCharaterCC);
     }
     console.log(charCodesToUse)
     // create for loop for generating password it to work 
-    var passwordCharaters=[]
+    var passwordCharaters=[];
     for(let i=0; i<characterAmount;i++){
-        var charater=charCodesToUse[Math.floor(Math.random()*characterAmount)]
-        passwordCharaters.push(String.fromCharCodesTouse(charater))
+        var a = Math.random();
+        var b = Math.random()*charCodesToUse.length - 1;
+        var c = Math.floor(b);
+        var d = charCodesToUse[c];
+        //var charater=charCodesToUse[Math.floor(Math.random()*characterAmount)];
+        passwordCharaters.push(String.fromCharCode(d));
     }
-    console.log(paswordCharter)
-    return passwordCharaters.join(" ")
+
+    console.log(passwordCharaters.join(""));
+    return passwordCharaters.join("");
 }
 
 function arrayrange(low, high) {
