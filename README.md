@@ -1,5 +1,5 @@
 # password-genetaror
-project with password generation through ASCII charater codes table,folloing series of confirm and promp and then genrtating password which is print on the screen.
+Project to generate random password using ASCII charater codes table, following series of confirm and prompts and then genrtating password which is printed on the screen.
 
 ## review
 the URL of the deployed application
